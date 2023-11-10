@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+        let a;
+        let date;
+        let time;
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        setInterval(() => {
+        a = new Date();
+        time = a.getHours() + ':' + a.getMinutes() + ':' + a.getSeconds();
+        date = a.toLocaleDateString(undefined, options)
+        document.getElementById("time").innerHTML = time + " <br>on " + date;
+    }, 1000)
+    </script>
+  </head>
+  <body>
+    <div class="color">
+        <nav class="navbar navbar-expand-lg " style="background-color: orange;">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="">Muneeb Times</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="project1.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/muneebdhatt">Link</a>
+                </li>
+                
+                
+            </div>
+            </div>
+        </nav>
+        <div  style="background-color: orange;">
+            <div class="container my-5" style="background-color: orange;">
+                <div class="p-5 text-center  rounded-3" style="background-color: orange;">
+                <p>Hello Welcome to Muneeb Times Website. <br>This website will give you the current time 
+                    and date and day of the place where you are living. <br>I have created this website
+                    for my learning purpose. So, kindly give me your reviews.<br> I am very thankful to you. </p>
+                <h1 class="text-body-emphasis" style="background-color: orange;">Current time is : <span id="time"></span></h1>
+                <h2  style="background-color: orange; " class="mt-5 mb-5">
+                    I hope you like it.
+                </h2>
+                <h3>Thanks for coming.</h3>
+                </div>
+            </div>
+        </div>
+
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top mb-0">
+            <p class="col-md-4 mb-0 text-body-secondary">© 2023 Muneeb Times, Inc</p>
+        
+            <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+        
+            <ul class="nav col-md-4 justify-content-end">
+              <li class="nav-item"><a href="project1.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+              <
+            </ul>
+          </footer>
+    </div>
+  </body>
+</html>

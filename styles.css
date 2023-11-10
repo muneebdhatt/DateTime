@@ -1,0 +1,18 @@
+.firstContainer{
+    margin: 3px 0;
+    padding: 10px;
+    background: rgb(24, 186, 186);
+}
+
+.secondContainer{
+    margin: 3px 0;
+    padding: 10px;
+    background: rgb(67, 186, 43);
+}
+
+.bg-primary{
+    background: skyblue;
+}
+.color{
+    background: orange;
+}
